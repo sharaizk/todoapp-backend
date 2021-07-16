@@ -16,8 +16,8 @@ app.use(require('./routes/userRoutes'))
 app.use(require('./routes/taskRoutes'))
 
 
-app.get('/',requireAuth,(req,res)=>{
-    res.send(`${req.user.email}`)
+app.get('/',(req,res)=>{
+    res.send('Hello World')
 })
 
 app.listen(PORT,()=>{
